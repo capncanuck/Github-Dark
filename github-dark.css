@@ -1,6 +1,6 @@
-@namespace url(https://www.w3.org/1999/xhtml);
+@namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document regexp("^http(s)?://((www|gist|help|status).)?github.*") {
+@-moz-document domain("github.com") {
 
 /* Github Dark Theme v1.2.32 (5/9/2012)
 * https://github.com/Mottie/Github-Dark
@@ -140,7 +140,6 @@ tr.issue span.label,ul.labels span.name {
 /* === Just rounded corners === */
 #wrapper,#your-repos-filter,.topsearch ul.nav {
     -moz-border-radius: 5px !important;
-    -webkit-border-radius: 5px !important;
 }
 
 /* === No huge text === */
@@ -221,7 +220,6 @@ ul.feature-tabs li.highlight,.commit-group-heading,.commit-group,.pagehead-actio
     background: #222 url() !important;
     border-color: #444 !important;
     -moz-border-radius: 5px !important;
-    -webkit-border-radius: 5px !important;
 }
 
 /* Darkest background (#222), leave image, no border */
@@ -257,7 +255,6 @@ ul.sorts li.asc,ul.sorts li.desc,.authorship,#files .file,.listings-layout .colu
 .boxed-group-inner,.accordion-container,.file-box {
     background-color: #333 !important;
     -moz-border-radius: 5px !important;
-    -webkit-border-radius: 5px !important;
     border: 0 !important;
 }
 
@@ -298,7 +295,6 @@ ul.sorts li.asc,ul.sorts li.desc,.authorship,#files .file,.listings-layout .colu
     background: #333 !important;
     border-color: #333 !important;
     -moz-border-radius: 5px 5px 0 0 !important;
-    -webkit-border-radius: 5px 5px 0 0 !important;
     margin-top: 3px !important;
     padding: 5px 5px 2px 5px !important;
 }
@@ -317,7 +313,6 @@ ul.sorts li.asc,ul.sorts li.desc,.authorship,#files .file,.listings-layout .colu
     background: #444 url() !important;
     border: 0 !important;
     -moz-border-radius: 5px !important;
-    -webkit-border-radius: 5px !important;
 }
 
 /* Light Panel background (#444), no image, with border, no radius */
@@ -344,7 +339,6 @@ pre div[style="background-color: rgb(255, 255, 204); "] { /* <- space after "; "
     background: #555 !important;
     border: 0 !important;
     -moz-border-radius: 5px !important;
-    -webkit-border-radius: 5px !important;
 }
 
 /* === Text Color === */
@@ -386,7 +380,6 @@ a.feed:hover, a.feed:hover span {
     background-color: #4183C4 !important;
     color: #ddd !important;
     -moz-border-radius: 5px !important;
-    -webkit-border-radius: 5px !important;
 }
 
 ul.clone-urls li:hover,ul.clone-urls li:hover > a,table.upgrades tr:hover td {
@@ -396,7 +389,6 @@ ul.clone-urls li:hover,ul.clone-urls li:hover > a,table.upgrades tr:hover td {
 /* Blue panel */
 #posts #rss,.github-jobs-promotion p,.signup-button,.hero h1,.plan.personal,.caption,.centered-graphic {
     background: #003 !important;
-    background: -webkit-gradient(linear, left top, left bottom, from(#005), to(#003));
     background: -moz-linear-gradient(center top , #005, #003) repeat scroll 0 0 transparent !important;
     border-color: #006 !important;
 }
@@ -406,7 +398,6 @@ ul.clone-urls li:hover,ul.clone-urls li:hover > a,table.upgrades tr:hover td {
 #forkqueue .legend .unclean,.unclean td,.state-closed,.chzn-results .no-results,.majorproblem .pageheader_wrap,.btn-close-issue,
 button.classy[name="comment_and_close"] {
     background: #300 !important;
-    background: -webkit-gradient(linear, left top, left bottom, from(#500), to(#300));
     background: -moz-linear-gradient(center top , #500, #300) repeat scroll 0 0 transparent !important;
     border-color: #600 !important;
     color: #ccc !important;
@@ -429,7 +420,6 @@ button.classy[name="comment_and_close"] {
 .ejector,#issues_search .results em,.bootcamp-help ul li,.page-notice,.feature-tabs .tab-button,.chzn-results li em,
 #missing-readme,.callout {
     background: #440 !important;
-    background: -webkit-gradient(linear, left top, left bottom, from(#660), to(#440));
     background: -moz-linear-gradient(center top , #660, #440) repeat scroll 0 0 transparent !important;
     border-color: #660 !important;
     color: #ddd !important;
@@ -440,7 +430,6 @@ button.classy[name="comment_and_close"] {
 #statusbar,.clean,.clean td,.mergeable.clean,.state-open,.octofication .message,#download_button,.status-box.good a,
 button.classy.primary {
     background: #305530 !important;
-    background: -webkit-gradient(linear, left top, left bottom, from(#373), to(#242));
     background: -moz-linear-gradient(center top , #373, #242) !important;
     border-color: #080 !important;
 }
@@ -468,7 +457,6 @@ button.classy.primary {
 /* Green hovered */
 #download_button:hover,.noproblems .pageheader_wrap {
     background: #305530 !important;
-    background: -webkit-gradient(linear, left top, left bottom, from(#383), to(#242));
     background: -moz-linear-gradient(center top , #383, #242) !important;
     border-color: #080 !important;
 }
@@ -476,7 +464,6 @@ button.classy.primary {
 /* === silver panel/button === */
 .kbd,.signup-button:hover,.hero .textographic,.hero .screenographic {
     background: #404040 !important;
-    background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#333));
     background: -moz-linear-gradient(center top , #444, #333) !important;
     border-color: #606060 !important;
 }
@@ -530,7 +517,6 @@ button.classy.primary {
 /* orange border left */
 .pagehead ul.tabs li a.selected,.pagehead > ul.tabs li a:hover,div.listing.navigation-focus,div.issues.navigation-focus {
     -moz-border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
     border-bottom: #f80 2px solid !important;
 }
 
